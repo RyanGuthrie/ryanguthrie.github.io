@@ -31,7 +31,7 @@
                     analytics._loadOptions = i
                 };
                 analytics._writeKey = "92dXLqqReKZPJWAvQMly4sD3DSBZvzPH";
-                ;analytics.SNIPPET_VERSION = "4.16.1";
+                analytics.SNIPPET_VERSION = "4.16.1";
                 analytics.load("92dXLqqReKZPJWAvQMly4sD3DSBZvzPH");
                 analytics.page();
             }
@@ -149,6 +149,9 @@
         });
 
         analytics.track("Something happened", {})
+        analytics.track('Signed Up', {
+            plan: 'Enterprise'
+        });
 
         analytics.track('Order Completed', {
             checkout_id: 'fksdjfsdjfisjf9sdfjsd9f',
